@@ -16,12 +16,12 @@ return color;
 for (let i = 0; i < TOTAL_SQUARES; i++) {
 const square = document.createElement('div');
 square.classList.add('square');
-square.addEventListener('mouseenter', () => {
+square.addEventListener('mouseover', () => {
   const color = getRandomColor();
   square.style.backgroundColor = color;
 
   setTimeout(() => {
-    square.style.backgroundColor = '#1d1d1d';
+    square.style.backgroundColor = "";
   }, 1000);
 });
 
